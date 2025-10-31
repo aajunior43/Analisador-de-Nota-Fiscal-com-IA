@@ -1,3 +1,4 @@
+
 import React, { useState, useCallback, useRef } from 'react';
 import { UploadIcon } from './icons/UploadIcon';
 import { DocumentTextIcon } from './icons/DocumentTextIcon';
@@ -85,7 +86,7 @@ export const FileUpload: React.FC<FileUploadProps> = ({ onFileChange, disabled }
                         <button
                             onClick={() => handleRemoveFile(file)}
                             disabled={disabled}
-                            className="p-1 text-gray-400 hover:text-red-400 disabled:opacity-50 disabled:cursor-not-allowed rounded-full transition-colors"
+                            className="p-1 text-gray-400 hover:text-red-400 hover:bg-red-900/50 disabled:opacity-50 disabled:cursor-not-allowed rounded-full transition-colors"
                             aria-label={`Remover ${file.name}`}
                         >
                             <XCircleIcon className="w-5 h-5" />
